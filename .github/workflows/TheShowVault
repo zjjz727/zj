@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Office Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .search-bar {
+            margin-left: auto;
+        }
+        .search-bar input {
+            padding: 5px;
+        }
+        main {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        section, aside {
+            flex: 1;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+        section h2, aside h2 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin: -15px -15px 15px -15px;
+            border-radius: 5px 5px 0 0;
+        }
+        .leaderboard ul, .upcoming-movies ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .leaderboard li, .upcoming-movies li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .leaderboard li:last-child, .upcoming-movies li:last-child {
+            border-bottom: none;
+        }
+        .trending-news img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Box Office Tracker</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search movies...">
+        </div>
+    </header>
+
+    <main>
+        <section class="leaderboard">
+            <h2>Box Office Leaderboard</h2>
+            <ul>
+                <li>
+                    <span>1. Movie Title</span>
+                    <span>$150M</span>
+                </li>
+                <li>
+                    <span>2. Movie Title</span>
+                    <span>$120M</span>
+                </li>
+                <li>
+                    <span>3. Movie Title</span>
+                    <span>$100M</span>
+                </li>
+                <li>
+                    <span>4. Movie Title</span>
+                    <span>$90M</span>
+                </li>
+                <li>
+                    <span>5. Movie Title</span>
+                    <span>$85M</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="trending-news">
+            <h2>Trending News & Polls</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Trending News">
+            <p><strong>Poll:</strong> Which movie will top the box office this weekend?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra felis at ex fermentum, sed cursus massa commodo.</p>
+        </section>
+
+        <aside class="upcoming-movies">
+            <h2>Upcoming Movies</h2>
+            <ul>
+                <li>Movie A - Release Date</li>
+                <li>Movie B - Release Date</li>
+                <li>Movie C - Release Date</li>
+                <li>Movie D - Release Date</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Box Office Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
